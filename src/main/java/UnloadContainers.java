@@ -59,7 +59,6 @@ public class UnloadContainers {
             int numberOfIterationOnStack = Integer.parseInt(instruction[1]);
             int stackToPop = Integer.parseInt(instruction[3])-1;
             int stackToPush = Integer.parseInt(instruction[5])-1;
-
             for(int j = 0; j < numberOfIterationOnStack; j++){
                 if(stacks[stackToPop].empty())
                 {

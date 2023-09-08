@@ -3,7 +3,7 @@
 •   data.txt: WELLDONE!
 •   data0.txt: CMZ
 •   data1.txt: 
-•   data2.txt: MBGHFHQJJ
+•   data2.txt: WONDERFUL
 •   data3.txt:
 
 Solution proposed: 
