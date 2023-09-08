@@ -28,13 +28,11 @@ public class UnloadContainers {
     private static final Logger logger=Logger.getLogger(UnloadContainers.class.getName());
     public static void main(String[] args) throws IOException {
 
-
-        //setUpData0ContainerShip(stacks);
-
         String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\data.txt";
         String[] instructions = getInstructionsFromFile(filePath);
 
         //Create container ship
+
         final int numberOfStacks = 9;
         Stack[] stacks = initialiseStacks(numberOfStacks);
         setUpDataContainerShip(stacks);
@@ -42,6 +40,19 @@ public class UnloadContainers {
         //setUpData0ContainerShip(stacks);
 
         //Process containers
+
+        processContainers(instructions, stacks);
+        //Reveal message
+        revealMessage(stacks);
+
+    }
+
+    private static void revealMessage(Stack[] stacks){
+        for (Stack<Character> stack: stacks) {
+            System.out.print(stack.peek().toString());
+        }
+    }
+    private static void processContainers(String[] instructions, Stack[] stacks){
         for(int i=0; i<instructions.length; i++) {
 
             String[] instruction = instructions[i].split(" ");
@@ -59,11 +70,6 @@ public class UnloadContainers {
                 }
             }
         }
-        //Reveal message
-        for (Stack<Character> stack: stacks) {
-            System.out.print(stack.peek().toString());
-        }
-
     }
 
     private static void setUpDataContainerShip(Stack<Character>[] stacks){
