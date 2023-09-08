@@ -1,3 +1,13 @@
+# SOLUTIONS
+
+•   data.txt: WELLDONE!
+•   data0.txt: CMZ
+•   data1.txt: 
+•   data2.txt: MBGHFHQJJ
+•   data3.txt:
+
+Solution proposed: 
+
 # The-Great-Java-Code-Off
 
 •	Teams of 3-4 will have 2 hrs to solve the problem.
