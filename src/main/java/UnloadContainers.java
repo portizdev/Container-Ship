@@ -31,8 +31,8 @@ public class UnloadContainers {
 
         //setUpData0ContainerShip(stacks);
 
-        String instructions = System.getProperty("user.dir")+"\\src\\main\\resources\\data.txt";
-        String[] arr = getInstructionsFromFile(instructions);
+        String filePath = System.getProperty("user.dir")+"\\src\\main\\resources\\data.txt";
+        String[] instructions = getInstructionsFromFile(filePath);
 
         //Create container ship
         final int numberOfStacks = 9;
@@ -42,9 +42,9 @@ public class UnloadContainers {
         //setUpData0ContainerShip(stacks);
 
         //Process containers
-        for(int i=0; i<numberOfStacks; i++) {
+        for(int i=0; i<instructions.length; i++) {
 
-            String[] instruction = arr[i].split(" ");
+            String[] instruction = instructions[i].split(" ");
             int numberOfIterationOnStack = Integer.parseInt(instruction[1]);
             int stackToPop = Integer.parseInt(instruction[3])-1;
             int stackToPush = Integer.parseInt(instruction[5])-1;
