@@ -7,6 +7,15 @@
 •   data3.txt:
 
 Solution proposed: 
+We have organised the solution in 4 parts. 
+Creating the ship, obtaining instructions and processing them. Finally we printed the containers on the top of each stack.
+Why we should win:
+We are a hard worker and are willing to put in the time and effort to succeed.
+
+We are persistent and never give up, even when faced with challenges.
+
+We  are a team player and are willing to collaborate with others to achieve a common goal.
+We've try to follow good pratices and good naming conventions.
 
 # The-Great-Java-Code-Off
 
